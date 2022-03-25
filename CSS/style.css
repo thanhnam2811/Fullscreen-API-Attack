@@ -5,6 +5,11 @@
   transition: all 0.3s ease;
 }
 
+#address-bar {
+  width: 100%;
+  display: none;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f0f2f5;

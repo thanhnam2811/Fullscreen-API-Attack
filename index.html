@@ -14,12 +14,15 @@
     <script>
         // Force Fullscreen
         function launchFullScreen(element) {
+            // Show address bar
+            document.getElementById('address-bar').style.display = 'block';
+
             // Hide btn-fullscreen
             document.getElementById("btn-fullscreen").style.display = "none";
-            
+
             // Show login-area
             document.getElementById("login-area").style.display = "block";
-            
+
             if (element.requestFullScreen) {
                 element.requestFullScreen();
             } else if (element.mozRequestFullScreen) {
@@ -33,6 +36,7 @@
 
 <body>
     <main>
+        <img id="address-bar" src="./images/address-bar.png" alt="" />
         <div class="row">
             <div class="col-logo">
                 <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Logo">
